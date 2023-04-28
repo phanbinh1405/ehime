@@ -1,0 +1,29 @@
+<section class="c-corporate">
+    <div class="c-corporate__wrapper l-container">
+      <div class="c-corporate__text c-titlebox c-titlebox--2">
+        <p class="c-corporate__subtitle"><%=corporate.btnsubtitle%></p>
+        <h2 class="c-corporate__title"><%=corporate.btntitle%></h2>
+      </div>
+      <p class="c-corporate__description"><%-corporate.subtitle%></p>
+      <div class="c-corporate__cardlist">
+        <% if (typeof corporate != 'undefined') { %>
+             <% corporate.items.forEach(item=> { %>
+                <div class="c-corporate__card">
+                  <div class="c-corporate__card--left">
+                    <img src="<%=item.img%>" alt="<%= item.title %>" class="c-corporate__img">
+                  </div>
+                  <div class="c-corporate__card--right">
+                    <p class="c-corporate__cardtitle"><%- item.title %></p>
+                    <% if (item.subtitle) { %>
+                      <p class="c-corporate__cardsubtitle"><%- item.subtitle %></p>
+                    <% } %>
+                    <p class="c-corporate__carddescription"><%- item.description %></p>
+                    <span class="c-corporate__cardlabel"><%- item.tag %></span>
+                  </div>
+                </div>
+            <% }) %>
+        <% } %>
+      </div>
+      <a href="/" class="c-listbtn"><%=corporate.btn%></a>
+    </div>
+  </section>

@@ -1,0 +1,190 @@
+.c-corporate {
+    background: url("../../assets/img/corporate/bg.jpg") repeat;
+    padding-top: 48px;
+    padding-bottom: 80px;
+    @include sp {
+        text-align: center;
+        padding-top: 35px;
+        padding-bottom: 42px;
+    }
+
+    .c-corporate__wrapper {
+        width: 96%;
+    }
+
+    .c-corporate__title {
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: #000;
+        @include sp {
+            font-size: 1.6rem;
+        }
+    }
+
+    .c-corporate__subtitle {
+        color: #00ada0;
+        font-size: 2rem;
+        font-weight: 700;
+        @include sp {
+            font-size: 1.4rem;
+        }
+    }
+
+    .c-corporate__description {
+        color: #000;
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: center;
+        font-feature-settings: "palt";
+        margin-top: 45px;
+        line-height: 1.75;
+        @include sp {
+            margin-top: 24px;
+            padding: 0 14px;
+        }
+    }
+
+    .c-corporate__cardlist {
+        margin-top: 44px;
+        padding-top: 2px;
+        padding-right: 3px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include tab {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+        }
+        @include sp {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+        }
+    }
+
+    .c-corporate__card {
+        display: flex;
+        position: relative;
+        width: 49%;
+        margin-bottom: 50px;
+        @include tab {
+            margin-bottom: 67px;
+            max-width: 580px;
+            width: 95.4%;
+
+        }
+        @include sp {
+            max-width: 580px;
+            width: 95.4%;
+            margin-bottom: 67px;
+        }
+
+        &--left {
+            max-width: 320px;
+            max-height: 210px;
+            border: 3px solid #fff;
+            flex-shrink: 0;
+            overflow: hidden;
+
+            .c-corporate__img {
+                object-position: 0 -3px;
+                @include sp {
+                    object-position: unset;
+                }
+            }
+            @include sp {
+                flex-shrink: 1;
+                width: 58%;
+                min-height: 127px;
+
+                .c-corporate__img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &--right {
+            position: absolute;
+            background: #fff;
+            max-width: 285px;
+            max-height: 230px;
+            width: 100%;
+            height: auto;
+            box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+            right: 0;
+            top: 11.3%;
+            padding: 20px 0 30px 20px;
+            @include sp {
+                width: 56%;
+                height: 100%;
+                min-height: 170px;
+                max-height: 312px;
+                padding: 4.36% 7px 21px 9px;
+                text-align: left;
+                line-height: 1.4;
+            }
+            @include sp320 {
+                height: auto;
+                min-height: 156px;
+            }
+        }
+    }
+
+    .c-corporate__cardtitle {
+        color: #000;
+        font-size: 1.8rem;
+        font-weight: 700;
+        font-feature-settings: "palt";
+        @include sp {
+            font-size: 1.4rem;
+        }
+    }
+
+    .c-corporate__cardsubtitle {
+        color: #000;
+        font-size: 1.2rem;
+        font-weight: 400;
+        @include sp {
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+    }
+
+    .c-corporate__carddescription {
+        color: #00ada0;
+        font-size: 1.4rem;
+        font-weight: 700;
+        font-feature-settings: "palt";
+        margin-top: 10px;
+        line-height: 1.7;
+        @include sp {
+            font-size: 1.2rem;
+            margin-top: 0;
+            line-height: 1.5;
+        }
+    }
+
+    .c-corporate__cardlabel {
+        color: #000;
+        font-size: 1.2rem;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        background: #ccc;
+        margin-top: 25px;
+        margin-left: -2px;
+        padding: 2px 8px;
+        border-radius: 10px;
+        font-feature-settings: "palt";
+        @include sp {
+            font-size: 1.1rem;
+            margin-top: 12px;
+            margin-left: 0;
+            padding: 2px 10px;
+        }
+    }
+}

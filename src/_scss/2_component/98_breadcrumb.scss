@@ -1,0 +1,31 @@
+.c-breadcrumb {
+    padding: 25px 0 33px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    @include tab {
+        width: 96%;
+        margin: 0 auto;
+    }
+    @include sp {
+        padding: 20px 0;
+    }
+
+    .c-breadcrumb__home {
+        font-size: 1.3rem;
+        color: #00ada0;
+        font-weight: 400;
+        border-bottom: 1px solid #00ada0;
+        padding-bottom: 3px;
+    }
+
+    .c-breadcrumb__arrow {
+        padding: 0 12px;
+    }
+
+    .c-breadcrumb__current {
+        font-size: 1.3rem;
+        color: #000;
+        font-weight: 400;
+        font-feature-settings: "palt";
+    }
+}

@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&family=Oswald:wght@300&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap");
+
+@import "0_base/vars";
+@import "0_base/reset";
+@import "0_base/mixin";
+
+
+@import "1_layout/01_layout";
+@import "1_layout/02_header";
+@import "1_layout/03_footer";
+
+@import "2_component/01_mainvisual";
+@import "2_component/02_pickup";
+@import "2_component/03_corporate";
+@import "2_component/04_news";
+@import "2_component/05_ehimework";
+@import "3_projects/06_subpagemainvisual.scss";
+@import "3_projects/about/07_concept";
+@import "3_projects/about/08_introduce";
+@import "3_projects/about/09__operating";
+@import "3_projects/contact/10_contactvisual";
+@import "3_projects/contact/11_form";
+@import "3_projects/company/01_companymv";
+@import "3_projects/interview/interview";
+@import "2_component/98_breadcrumb";
+@import "2_component/99_others";
+@import "2_component/100_card";
+
+@import "0_base/utility";

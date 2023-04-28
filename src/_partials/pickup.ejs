@@ -1,0 +1,28 @@
+<section class="c-pickup">
+    <div class="c-pickup__wrapper">
+      <div class="c-pickup__text c-titlebox c-titlebox--1">
+        <p class="c-pickup__subtitle"><%=pickup.btnsubtitle%></p>
+        <h2 class="c-pickup__title"><%=pickup.btntitle%></h2>
+      </div>
+      <div class="c-pickup__slider">
+        <% if (typeof pickup != 'undefined') { %>
+             <% pickup.items.forEach(item=> { %>
+                <div class="c-pickup__card">
+                  <div class="c-pickup__card--top">
+                    <img src="<%=item.img%>" alt="<%= item.title %>" class="c-pickup__img">
+                    <% if (item.tag) { %>
+                      <span class="c-pickup__label"><%- item.tag %></span>
+                    <% } %>
+                  </div>
+                  <div class="c-pickup__card--bottom">
+                    <p class="c-pickup__cardtitle"><%- item.title %></p>
+                    <% if (item.subtitle) { %>
+                      <p class="c-pickup__cardsubtitle"><%- item.subtitle %></p>
+                    <% } %>
+                  </div>
+                </div>
+            <% }) %>
+        <% } %>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,115 @@
+.c-news {
+    margin-top: 42px;
+    position: relative;
+    @include sp {
+        margin-top: 30px;
+    }
+
+    .c-news__wrapper {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background: url("../../assets/img/news/book.png") no-repeat;
+            z-index: -1;
+            max-width: 310px;
+            max-height: 400px;
+            width: 100%;
+            height: 100%;
+            left: 11.5%;
+            top: 18.1%;
+            @include sp {
+                display: none;
+            }
+        }
+    }
+
+    .c-news__heading {
+        text-align: center;
+    }
+
+    .c-news__title {
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: #000;
+        letter-spacing: -0.01em;
+        margin-top: 3px;
+        font-feature-settings: "palt";
+        @include sp {
+            font-size: 1.6rem;
+            letter-spacing: -0.05em;
+            margin-top: 0;
+        }
+    }
+
+    .c-news__subtitle {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #00ada0;
+        @include sp {
+            font-size: 1.4rem;
+        }
+    }
+
+    .c-news__table {
+        border-collapse: collapse;
+        border-top: 1px solid #ccc;
+        margin-top: 24px;
+        margin-bottom: 50px;
+        @include sp {
+            max-width: 580px;
+            width: 90%;
+            margin-top: 27px;
+            margin-bottom: 36px;
+        }
+    }
+
+    .c-news__link {
+        display: block;
+        width: 100%;
+        padding: 2.62% 0;
+        @include sp {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 3.22% 0;
+        }
+    }
+
+    .c-news__tablerow {
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        @include sp {
+            flex-direction: column;
+            letter-spacing: 0.1px;
+        }
+    }
+
+    .c-news__tablehead {
+        color: #781111;
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: left;
+        @include sp {
+            font-size: 1.2rem;
+            width: 100%;
+        }
+    }
+
+    .c-news__tabledescription {
+        color: #000;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding-left: 4.3%;
+        letter-spacing: 0.009em;
+        font-feature-settings: "palt";
+        @include sp {
+            font-size: 1.3rem;
+            width: 100%;
+            padding-left: 0;
+            margin-top: 6px;
+        }
+    }
+}

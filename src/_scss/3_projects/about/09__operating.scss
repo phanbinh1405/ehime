@@ -1,0 +1,126 @@
+.c-operating {
+    padding-top: 145px;
+    padding-bottom: 101px;
+    @include sp {
+        padding: 60px 0;
+    }
+
+    .c-operate__phone {
+        pointer-events: none;
+        @include tab {
+            pointer-events: all;
+        }
+        @include sp {
+            pointer-events: all;
+
+        }
+    }
+
+    .c-operating__heading {
+        position: relative;
+        width: 100%;
+        max-width: 482px;
+        margin: 0 auto;
+        text-align: center;
+        @include sp {
+            width: 90%;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            background: url(../../assets/img/about/topquote.png) no-repeat;
+            top: 1px;
+            left: -1px;
+            height: 100%;
+            background-size: contain;
+        }       
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            background: url(../../assets/img/about/bottomquote.png) no-repeat;
+            bottom: -1px;
+            left: -3px;
+            height: 26%;
+            background-size: contain;
+            @include sp {
+                background-position: center;
+                height: 50%;
+                bottom: -8px;
+            }
+        }
+    }
+
+    .c-operating__title {
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: #020000;
+        padding: 32px 0;
+        @include sp {
+            font-size: 2.2rem;
+            padding: 20px 0;
+        }
+        
+    }
+
+    .c-operating__tablewrapper {
+        width: 67.3%;
+        margin: 0 auto;
+        border-top: 1px solid #ccc;
+        border-collapse: collapse;
+        margin-top: 56px;
+        @include sp {
+            width: 90%;
+        }
+    }
+
+
+    .c-operating__link {
+        display: flex;
+        width: 100%;
+
+        .c-operating__td {
+
+            color: #00a99d;
+        }
+        @include sp {
+            flex-direction: column;
+        }
+    }
+
+    .c-operating__th {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #020000;
+        width: 20.6%;
+        padding: 3px 0;
+        @include sp {
+            width: 50%;
+            font-size: 1.4rem;
+        }
+    }
+
+    .c-operating__td {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #020000;
+        line-height: 1.875;
+        @include sp {
+            font-size: 1.4rem;
+        }
+    }
+
+    .c-operating__tablerow {
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        padding: 2.94% 0;
+        font-feature-settings: "palt";
+        @include sp {
+            flex-direction: column;
+        }
+    }
+
+}

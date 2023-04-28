@@ -1,0 +1,63 @@
+.c-concept {
+    background: url("../../assets/img/about/conceptbg.jpg") repeat;
+    padding-bottom: 99px;
+
+    .c-concept__wrapper {
+        width: 96%;
+        text-align: center;
+    }
+
+    .c-concept__heading {
+        font-feature-settings: "palt";
+        padding-top: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+        position: relative;
+
+        .c-concept__title {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #020000;
+            margin-top: 4px;
+            position: relative;
+            @include sp {
+                font-size: 2.2rem;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                height: 15px;
+                background: #fff568;
+                width: 100%;
+                bottom: 3px;
+                z-index: -1;
+                @include sp {
+                    height: 10px;
+                }
+            }
+        }
+
+        .c-concept__subtitle {
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #020000;
+            @include sp {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .c-concept__img {
+        width: 59.9%;
+        text-align: center;
+        margin-top: 47px;
+        margin-left: -3px;
+        @include sp {
+            width: 90%;
+        }
+    }
+}

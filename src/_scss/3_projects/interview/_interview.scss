@@ -1,0 +1,60 @@
+.interview {
+    .interview-intro {
+        margin-bottom: 130px;
+    }
+
+    .c-interviewmainvisual {
+        background: url("../../assets/img/interview/mainvisual.jpg") no-repeat
+        center;
+        min-height: 400px;
+        position: relative;
+        background-size: cover;
+    }
+
+    .intervew-intro__content {
+        padding: 22px 0 24px;
+        border-bottom: 1px solid #ccc;  
+    }
+
+    .interview-intro__title {
+        text-align: center;
+        font-size: 2.4rem;
+        font-feature-settings: "palt" 1;
+    }
+
+    .interview-intro__taxo {
+        text-align: right;
+        margin-top: 80px;
+    }
+
+    .interview-intro__taxoitem {
+        display: inline-block;
+        font-size: 1.6rem;
+        font-feature-settings: "palt" 1;
+        font-weight: 700;
+        border: 2px solid #000;
+        background-color: #fff;
+        border-radius: 18px;
+        padding: 5px 24px;
+        margin-left: 20px;
+        letter-spacing: 0.03em;
+        &.active, &:hover {
+            background-color: rgb(0, 169, 157);
+            border-color: rgb(0, 169, 157);
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .interview-intro__list {
+        margin-top: -25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 45px;
+        .c-card {
+            padding-bottom: 57px;
+        }
+    }
+}

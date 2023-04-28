@@ -1,0 +1,93 @@
+<header class="c-header l-container">
+  <div class="c-header__pcmenu c-pc-only">
+    <div class="c-header__pctop">
+      <a href="#" class="c-header__toptext">
+        <p class="c-header__request">掲載・取材依頼の企業様へ</p>
+        <img src="./assets/img/headerarrow.svg" alt="掲載・取材依頼の企業様へ">
+      </a>
+    </div>
+    <div class="c-header__menu u-bgwhite">
+      <h1 class="c-header__logo">
+        <a href="/">
+          <img src="./assets/img/logo.png" alt="Ehime Keizai Report Inc,">
+        </a>
+      </h1>
+      <nav class="c-gnav">
+        <% if (typeof linklists != 'undefined') { %>
+          <ul class="c-gnav__menu">
+            <% linklists.main && linklists.main.forEach(link => { %>
+            <li class="c-gnav__li">
+              <a href="<%= link.url %>" class='c-gnav__item <% if(link.title == "お問い合わせ"){%>c-gnav__item--contact<%}%>'><%= link.title %></a>
+            </li>
+            <% }) %>
+          </ul>
+          <% } %>
+      </nav>
+    </div>
+  </div>
+  <div class="c-header__spmenu">
+    <div class="c-header__spwrapper">
+      <div class="c-header__spwrapper--left">
+        <a href="/" class="c-header__spitem">
+          <img src="./assets/img/sp/headerlogo.png" alt="Ehime Keizai Report Inc," class="c-header__splogo">
+        </a>
+      </div>
+      <div class="c-header__spwrapper--right">
+        <a href="./contact.html" class="c-header__spitem c-header__spitem--contact">
+          <img src="./assets/img/sp/mail.png" alt="掲載・取材依頼の企業様へ" class="c-header__icon">
+          <p class="c-header__text">お問い合わせ
+          </p>
+        </a>
+        <a href="#" class="c-header__spitem c-header__spitem--menuicon">
+          <img src="./assets/img/sp/menuicon.png" alt="メニュー" class="c-header__icon">
+          <p class="c-header__text">メニュー</p>
+        </a>
+      </div>
+    </div>
+    <div class="c-header__spgnav">
+      <a class="c-header__close">
+        <img src="./assets/img/closeicon.png" alt="閉じる" class="c-header__close--icon">
+        <p class="c-header__close--text">閉じる</p>
+      </a>
+      <ul class="c-header__spgnavmenu">
+        <li class="c-header__spgnavitem">
+          <a href="/" class="c-header__link">ホーム</a>
+        </li>
+        <li class="c-header__spgnavitem">
+          <a href="#" class="c-header__link">企業一覧</a>
+        </li>
+        <li class="c-header__spgnavitem">
+          <a href="./about.html" class="c-header__link">愛媛シゴト図鑑とは</a>
+        </li>
+        <li class="c-header__spgnavitem">
+          <a href="#" class="c-header__link">インタビュー</a>
+        </li>
+        <li class="c-header__spgnavitem">
+          <a href="#" class="c-header__link">ニュース</a>
+        </li>
+        <li class="c-header__spgnavitem">
+          <a href="#" class="c-header__link">運営会社</a>
+        </li>
+        <li class="c-header__spgnavitem">
+          <a href="./contact.html" class="c-header__link">お問い合わせ</a>
+        </li>
+      </ul>
+      <div class="c-header__contact">
+        <a href="tel:0899741411" class="c-header__phone"><span class="c-header__phone--text">TEL.</span>089-947-1411</a>
+        <p class="c-header__time">受付時間9:00〜17:00（平日のみ）</p>
+      </div>
+      <a href="#" class="c-header__btn">掲載・取材のご依頼についてはこちら</a>
+      <ul class="c-header__spsubmenu">
+        <li>
+          <a href="/" class="c-header__subitem">プライバシーポリシー</a>
+        </li>
+        <li>
+          <a href="#" class="c-header__subitem">利用規約</a>
+        </li>
+        <li>
+          <p class="c-header__subitem c-header__subitem--closemenu">閉じる</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

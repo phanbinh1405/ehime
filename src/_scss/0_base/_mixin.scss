@@ -1,0 +1,30 @@
+@mixin clear {
+    *zoom: 1;
+
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+@mixin pc {
+    @media only screen and (max-width: 1300px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin sp {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin sp320 {
+    @media only screen and (max-width: 320px) {
+        @content;
+    }
+}

@@ -1,0 +1,31 @@
+<section class="company-content l-container">
+    <div class="c-breadcrumb">
+        <a href="/" class="c-breadcrumb__home">ホーム</a>
+        <span class="c-breadcrumb__arrow">></span>
+        <span class="c-breadcrumb__current">企業一覧</span>
+    </div>
+    <div class="company-list">
+        <% if (company.listCompany) { %>
+            <% company.listCompany.forEach(company => { %>
+                <a href="#" class="c-card">
+                    <img src="<%= company.image %>" alt="<%= company.title %>" class="c-card__img">
+                    <div class="c-card__body">
+                        <div class="c-card__content">
+                            <h2 class="c-card__title"><%= company.title %></h2>
+                            <p class="c-card__subtitle"><%= company.subTitle %></p>
+                            <p class="c-card__description"><%- company.description %></p>
+                            <span class="c-card__tag"><%= company.tag %></span>
+                        </div>
+                        <img src="./assets/img/cardicon.png" alt="card icon">
+                    </div>
+                </a>
+            <% }) %>
+        <% } %>
+    </div>
+
+    <div class="c-pagination">
+        <span href="#" class="current">1</span>
+        <a href="#" class="page-numbers">2</a>
+        <a href="" class="next page-numbers">NEXT</a>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+<section class="c-concept">
+    <div class="c-concept__wrapper l-container">
+        <div class="c-breadcrumb">
+            <a href="/" class="c-breadcrumb__home">ホーム</a>
+            <span class="c-breadcrumb__arrow">></span>
+            <span class="c-breadcrumb__current">愛媛シゴト図鑑とは</span>
+        </div>
+        <div class="c-concept__heading">
+            <% if (about.concept) { %>
+            <p class="c-concept__subtitle"><%= about.concept.smalltitle %></p>
+            <h2 class="c-concept__title"><%= about.concept.title %></h2>
+            <%}%>
+        </div>
+        <img src="./assets/img/about/conceptbook.png" alt="仕事選びの不安を無くしたい" class="c-concept__img">
+    </div>
+</section>

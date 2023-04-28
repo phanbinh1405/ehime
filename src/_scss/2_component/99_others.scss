@@ -1,0 +1,166 @@
+.c-titlebox {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: $main-font;
+    padding: 11px 0;
+    border-radius: 3px;
+    @include sp {
+        padding: 11px 0;
+        max-width: 540px;
+        display: inline-block;
+        min-width: 270px;
+        width: 80%;
+    }
+
+    &--1 {
+        border: 2px solid rgb(172, 222, 218);
+    }
+
+    &--2 {
+        border: 2px solid #000;
+    }
+}
+
+.c-listbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    width: 100%;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: #00ada0;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 18px 0;
+    box-shadow: 4px 4px #000;
+    transition: all 0.5s;
+    position: relative;
+    font-feature-settings: "palt";
+
+    &--submit {
+        border: none;
+    }
+
+    &--sponly {
+        display: none;
+    }
+
+    &--pconly {
+        display: flex;
+    }
+    @include sp {
+        width: 84.5%;
+        font-size: 1.3rem;
+        box-shadow: 2px 2px #000;
+        margin-top: 52px;
+        padding: 10px 0;
+
+        &--2 {
+            margin-top: 36px;
+        }
+
+        &--sponly {
+            display: flex;
+            order: 2;
+            margin-top: 25px;
+        }
+
+        &--pconly {
+            display: none;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        background: url("../../assets/img/corporate/arrow.svg");
+        width: 20px;
+        height: 20px;
+        right: 4.4%;
+        @include sp {
+            width: 15px;
+            height: 15px;
+            right: 12.5%;
+            background-size: cover;
+        }
+    }
+
+    &:hover {
+        transform: translate(4px, 4px);
+        box-shadow: none;
+        @include sp {
+            transform: translate(2px, 2px);
+        }
+    }
+
+    &--white {
+        background: #fff;
+        box-shadow: none;
+        color: #00ada0;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background: url("../../assets/img/ehimework/arrow.svg");
+            width: 20px;
+            height: 20px;
+            right: 4.4%;
+        }
+
+        &:hover {
+            transform: translate(0, 0);
+        }
+
+        &.c-listbtn--sponly {
+            &::after {
+                right: 11%;
+                width: 15px;
+                height: 15px;
+                background-size: cover;
+            }
+        }
+    }
+}
+
+.c-pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 47px;
+    align-items: center;
+    .page-numbers, .current {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin: 0 5px;
+    }
+    .current {
+        background-color: #000;
+        color: #fff;  
+        width: 46px;
+        height: 48px;
+    }
+    .page-numbers {
+        background-color: #fff;
+        color: #000;
+        border: 3px solid #000;
+        width: 40px;
+        height: 42px;
+    }
+    .next, .prev {
+        border: 0;
+        font-size: 1.8rem;
+    }
+    .next {
+        margin-left: 18px;
+        margin-right: 11px;
+    }
+
+    .prev {
+        margin-right: 18px;
+        margin-left: 11px;
+    }
+}

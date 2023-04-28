@@ -1,0 +1,222 @@
+.c-form__main {
+    width: 90%;
+    margin-bottom: 130px;
+    @include sp {
+        margin-bottom: 40px;
+    }
+}
+
+.c-form__wrapper {    
+    width: 67.75%;
+    font-feature-settings: "palt";
+    margin-top: 42px;
+    transition: all 0.3s;
+    @include tab {
+        width: 90%;
+    }
+    @include sp {
+        width: 90%;
+    }
+
+    .c-form__content {
+        margin-top: 56px;
+        margin-bottom: 50px;
+        border-top: 1px solid #c5c5c5;
+
+    }
+
+    .c-form__title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+        @include sp {
+            font-size: 2.2rem;
+        }
+    }
+
+    .c-form__description {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #000;
+        letter-spacing: 1.5px;
+        line-height: 2;
+        margin-top: 26px;
+        @include sp {
+            font-size: 1.2rem;
+        }
+
+        &--blue {
+            color: #00ada0;
+            font-weight: 700;
+        }
+
+        &--note {
+            color: #fd0000;
+        }
+    }
+
+    .c-form__row {
+        display: flex;
+        border-bottom: 1px solid #c5c5c5;
+        padding: 2.54% 0;
+        @include sp {
+            flex-direction: column;
+        }
+    }
+
+    .c-form__label {
+        min-width: 32.1%;
+        font-weight: 700;
+        line-height: 1.7;
+        letter-spacing: 1.3px;
+        font-size: 1.6rem;
+        color: #000;
+        @include tab {
+            font-size: 1.4rem;
+        }
+        @include sp {
+            font-size: 1.4rem;
+        }
+    }
+
+    .c-form__input {
+        width: 47.2%;
+        height: 45px;
+        padding: 0 10px;
+        border: unset;
+        background-color: #f2f2f2;
+        @include sp {
+            width: auto;
+        }
+
+        &--fullw {
+            flex-grow: 0;
+            width: 77.7%;
+            margin-right: 3px;
+            @include sp {
+                width: calc(100% - 20px);
+            }
+        }
+    }
+
+    .c-form__checkboxwrapper {
+        flex-grow: 0;
+        width: 100%;
+    }
+
+    .c-form__checkbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--top {
+            margin-right: 22px;
+            margin-bottom: 9px;
+        }
+
+
+        @include tab {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 6px;
+        }
+        @include sp {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 0;
+            margin-top: 6px;
+
+            &--bottom {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .c-form__tarea {
+        width: 100%;
+        height: 190px;
+        padding: 10px;
+        border: unset;
+        overflow: scroll;
+        background-color: #f2f2f2;
+        font-family: $main-font;
+        @include sp {
+            width: auto;
+        }
+    }
+
+    .c-form__checklabel {
+        position: relative;
+        padding-left: 26px;
+        cursor: pointer;
+        user-select: none;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #000;
+        display: block;
+
+        @include tab {
+            margin-bottom: 6px;
+        }
+        @include sp {
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+
+        }
+
+        .c-form__check {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .c-form__tick {
+            position: absolute;
+            top: 4px;
+            left: 0;
+            height: 17px;
+            width: 17px;
+            background-color: #fff;
+            border: 1px solid #c2c2c2;
+            @include sp {
+                top: 1px;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+        }
+
+        .u-check {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+
+            &:checked {
+                ~.c-form__tick {
+                    background-color: #00ada0;
+
+                    &::after {
+                        display: block;
+                        left: 4.5px;
+                        top: 1px;
+                        width: 3px;
+                        height: 7px;
+                        border: solid #fff;
+                        border-width: 0 3px 3px 0;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+
+        
+    }
+}

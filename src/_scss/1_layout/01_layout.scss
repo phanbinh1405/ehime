@@ -1,0 +1,70 @@
+#p-main {
+    font-family: $main-font;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    position: relative;
+    transition: all 0.3s;
+    @include sp {
+        min-width: 320px;
+    }
+
+    &.u-overflowhidden {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.l-container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.l-container--780 {
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.l-container--1416 {
+    max-width: 1416px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.l-container--1920 {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.c-sp-only {
+    display: none;
+}
+@include sp {
+    .c-sp-only {
+        display: block;
+    }
+
+    .c-pc-only {
+        display: none;
+    }
+}
+
+.u-breakline {
+    &--sp {
+        display: none;
+        @include sp {
+            display: block;
+        }
+    }
+
+    &--pc {
+        display: block;
+        @include sp {
+            display: none;
+        }
+    }
+}

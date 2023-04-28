@@ -1,0 +1,27 @@
+<section class="c-operating">
+    <div class="c-operating__wrapper l-container">
+        <div class="c-operating__heading">
+            <h2 class="c-operating__title"><%= about.operatingtitle %></h2>
+        </div>
+        <ul class="c-operating__tablewrapper">
+            <% if (about.operating) { %> <% about.operating.forEach(row=> { %>
+            <li class="c-operating__tablerow">
+                <% if (row.th == "HP") { %>
+                    <a href="<%= row.td %>" target="_blank" class="c-operating__link">
+                        <span class="c-operating__th"><%-row.th%></span>
+                        <span class="c-operating__td"><%-row.td%></span>
+                    </a>
+                  <% }else if (row.th == "Mail"){ %>  
+                    <a href="mailto:<%= row.td %>" class="c-operating__link">
+                        <span class="c-operating__th"><%-row.th%></span>
+                        <span class="c-operating__td"><%-row.td%></span>
+                    </a>
+                 <% }else { %>  
+                    <span class="c-operating__th"><%-row.th%></span>
+                    <span class="c-operating__td"><%-row.td%></span>
+                 <% }%>
+            </li>
+            <% }) %> <% } %>
+        </ul>
+    </div>
+</section>

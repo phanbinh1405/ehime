@@ -1,0 +1,57 @@
+.c-mainvisual {
+    position: relative;
+    min-height: 700px;
+    @include sp {   
+        min-height: 0;
+    }
+
+    .c-mainvisual__text {
+        position: absolute;
+        bottom: 7.1%;
+        left: 19.6%;
+        @include sp {
+            bottom: 6.8%;
+            left: 4.6%;
+        }
+    }
+
+    .c-mainvisual__title {
+        margin-bottom: 34px;
+        @include sp {
+            margin-bottom: 0;
+            width: 92%;
+        }
+    }
+
+    .c-mainvisual__subtitle {
+        font-size: 2rem;
+        font-family: $main-font;
+        color: #fff;
+        font-weight: 700;
+        background-color: rgba($color: #fff, $alpha: 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        padding: 3px;
+        @include sp {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-top: 35px;
+            width: fit-content;
+            padding: 0 14px;
+        
+        }
+    }
+
+    .c-slider__img {
+        min-height: 700px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        @include sp {   
+            min-height: 0;
+            width: 100%;
+        }
+    }
+}

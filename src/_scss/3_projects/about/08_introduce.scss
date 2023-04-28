@@ -1,0 +1,107 @@
+.c-introduce {
+    .c-introduce__list {
+        margin-top: 43px;
+    }
+}
+
+.c-introduce__item {
+    display: flex;
+    @include sp {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .c-introduce__imgbox {
+        width: 50%;
+        @include sp {
+            width: 100%;
+        }
+
+        .c-introduce__img {
+            margin-top: 6px;
+            width: 100%;
+            min-height: 485px;
+            object-fit: cover;
+            object-position: -1px;
+            @include pc {
+                margin-top: 0;
+                min-height: unset;
+                height: 100%;
+                object-position: center;
+            }
+        }
+    }
+
+    .c-introduce__text {
+        max-width: 384px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: 26px;
+        font-feature-settings: "palt";
+        @include sp {
+            max-width: none;
+            margin: 0;
+            width: 90%;
+        }
+
+        .c-introduce__title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #020000;
+            @include sp {
+                font-size: 1.6rem;
+            }
+        }
+    
+        .c-introduce__description {
+            margin-top: 12px;
+            font-size: 1.5rem;
+            line-height: 2;
+            letter-spacing: 0.1px;
+            font-weight: 400;
+            font-feature-settings: "palt";
+            @include sp {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    &--2 {
+        flex-direction: row-reverse;
+        margin-top: 95px;
+        @include sp {
+            margin-top: 43px;
+            flex-direction: column;
+        }
+
+        .c-introduce__imgbox {
+            .c-introduce__img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: -10px;
+                @include sp {
+                    object-position: 0;
+                }
+            }
+        }
+
+        .c-introduce__text {
+            margin-right: auto;
+            margin-left: 29px;
+            font-feature-settings: "palt";
+            max-width: 383px;
+            @include sp {
+                width: 90%;
+                margin: 0;
+                max-width: none;
+            }
+        }
+    }
+}
+
+    
+
+
+

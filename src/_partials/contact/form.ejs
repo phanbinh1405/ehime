@@ -1,0 +1,55 @@
+<section class="c-form">
+    <div class="c-form__main l-container">
+        <div class="c-breadcrumb">
+            <a href="/" class="c-breadcrumb__home">ホーム</a>
+            <span class="c-breadcrumb__arrow">></span>
+            <span class="c-breadcrumb__current">お問い合わせ</span>
+        </div>
+        <div class="c-form__wrapper l-container">
+            <h2 class="c-form__title"><%= contactus.title %></h2>
+            <p class="c-form__description"><%- contactus.description %></p>
+            <form action="" method="POST" id="is-form">
+            <ul class="c-form__content">
+                <% if (contactus.table) { %> <% contactus.table.forEach(row=> { %>
+                    <li class="c-form__row">
+                        <label class="c-form__label" for="<%=row.labelfor%>"><%- row.th %></label>
+                        <% if (row.tdstop) { %> 
+                            <div class="c-form__checkboxwrapper">
+                                <div class="c-form__checkbox c-form__checkbox--top">
+                                <% row.tdstop.forEach(td=> { %>
+                                        <label class="c-form__checklabel" for="<%=td.for%>"><%- td.td %>
+                                        <input id="<%=td.for%>" name="<%=td.for%>" type="<%=td.type%>" class='<% if(td.type != "text"){%>u-check<%}else{%>c-form__input c-form__input--fullw<%}%>'>
+                                        <% if(td.type != "text"){%><span class="c-form__tick"></span><%}%> 
+                                    </label>
+                                        <%})%> 
+                                </div>
+                                <% if(row.tdsbottom){%>
+                                    <div class="c-form__checkbox c-form__checkbox--bottom">
+                                    <% row.tdsbottom.forEach(td=> { %>
+                                        <%if(td.type=="checkbox"){%>
+                                            <label class="c-form__checklabel" for="<%=td.for%>"><%- td.td %>
+                                                <input id="<%=td.for%>" name="<%=td.for%>" type="<%=td.type%>" class='<% if(td.type != "text"){%>u-check<%}else{%>c-form__input c-form__input--fullw<%}%>'>
+                                                <% if(td.type != "text"){%><span class="c-form__tick"></span><%}%> 
+                                            </label>
+                                        <%}else{%>
+                                        <input id="<%=td.for%>" name="<%=td.for%>" type="<%=td.type%>" class="c-form__input c-form__input--fullw"><%}%><%})%>
+                                    </div>
+                                <%}%>
+                            </div><%}
+                            else{%>
+                                <% if(row.labelfor!=="inquiry"){%>
+                                    <input id="<%=row.labelfor%>" name="<%=row.labelfor%>" type="text" class='c-form__input <%if(row.th=="住所"){%>c-form__input--fullw<%}%>'>
+                                <%}else{%>
+                                    <textarea class="c-form__tarea" id="<%=row.labelfor%>" cols="20" rows="10"></textarea>
+                                    <%}%>
+                                <%}%>
+
+                    </li>
+                    <% }) %> <% 
+                }%>
+            </ul>
+            <button type="submit" class="c-listbtn c-listbtn--submit"><%=contactus.btn%></button>
+            </form>
+        </div>
+    </div>
+</section>

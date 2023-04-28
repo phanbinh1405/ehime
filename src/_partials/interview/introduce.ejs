@@ -1,0 +1,53 @@
+<section class="interview-intro l-container">
+    <div class="c-breadcrumb">
+        <a href="/" class="c-breadcrumb__home">ホーム</a>
+        <span class="c-breadcrumb__arrow">></span>
+        <span class="c-breadcrumb__current">インタビュー一覧</span>
+    </div>
+    <div class="intervew-intro__content">
+        <h2 class="interview-intro__title">就活に役立つコラムと<br>週刊愛媛経済レポート連載の経営者インタビューを紹介！</h2>
+        <div class="interview-intro__taxo">
+            <div class="interview-intro__taxoitem active">
+                <p>すべて</p>
+            </div>
+            <div class="interview-intro__taxoitem">
+                <p>会社説明会2020</p>
+            </div>
+            <div class="interview-intro__taxoitem">
+                <p>就活コラム</p>
+            </div>
+            <div class="interview-intro__taxoitem">
+                <p>経営者インタビュー</p>
+            </div>
+        </div>
+    </div>
+    <div class="interview-intro__list">
+        <% if (interview.listInterview) { %>
+            <% interview.listInterview.forEach(inter => { %>
+                <a href="#" class="c-card">
+                    <div class="c-card__head">
+                        <img src="<%= inter.image %>" alt="<%= inter.title %>" class="c-card__img">
+                        <span class="c-card__floattag"><%= inter.tag %></span>
+                    </div>
+                    <div class="c-card__body">
+                        <div class="c-card__content">
+                            <h3 class="c-card__title c-card__title--small"><%- inter.title %></h3>
+                            <% if (inter.subTitle) { %>
+                                <p class="c-card__subtitle c-card__subtitle--large"><%= inter.subTitle %></p>
+                            <% } %>
+                        </div>
+                        <img src="./assets/img/cardicon.png" alt="card icon">
+                    </div>
+                </a>
+            <% }) %>
+        <% } %>
+    </div>
+    <div class="c-pagination">
+        <a href="" class="prev page-numbers">PREV</a>
+        <a href="#" class="page-numbers">1</a>
+        <a href="#" class="page-numbers">2</a>
+        <span href="#" class="current">3</span>
+        <a href="#" class="page-numbers">4</a>
+        <a href="" class="next page-numbers">NEXT</a>
+    </div>
+</section>

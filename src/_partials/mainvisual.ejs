@@ -1,0 +1,25 @@
+<section class="c-mainvisual">
+  <div class="c-mainvisual__wrapper">
+    <div class="c-slider__slideshow">
+      <% if (mainvisual.imgs) { %>
+          <% mainvisual.imgs.forEach(img=> { %>
+            <picture>
+              <source media="(max-width:767px)" srcset="<%=img.sp%>">
+              <img src="<%=img.url%>" alt="2020年卒学生向けの企業紹介サイト" class="c-slider__img">
+            </picture>
+          <%})%>
+      <%}%>
+    </div>
+    <div class="c-mainvisual__text">
+      <div class="c-mainvisual__inner">
+        <h2 class="c-mainvisual__title">
+          <picture>
+            <source media="(max-width:767px)" srcset="<%=mainvisual.sp%>">
+            <img src="<%= mainvisual.inner%>" alt="2020年卒学生向けの企業紹介サイト">
+          </picture>
+        </h2>
+        <p class="c-mainvisual__subtitle"><%=mainvisual.subtitle%></p>
+      </div>
+    </div>
+  </div>
+</section>

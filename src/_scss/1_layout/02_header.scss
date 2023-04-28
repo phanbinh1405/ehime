@@ -1,0 +1,323 @@
+.c-header {
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    left: 0;
+    right: 0;
+    width: 95%;
+    transition: all 0.3s;
+
+    @include tab {
+        position: static;
+        width: 100%;
+    }
+    @include sp {
+        position: static;
+        width: 100%;
+    }
+
+    .c-header__pcmenu {
+        @include tab {
+            display: none;
+        }
+    }
+
+    .c-header__spheader {
+        min-height: 160px;
+        height: 100%;
+    }
+
+    .c-header__spmenu {
+        display: none;
+        @include tab {
+            display: block;
+        }
+        @include sp {
+            display: block;
+        }
+    }
+}
+
+.c-header__pctop {
+    text-align: right;
+}
+
+.c-header__toptext {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 16px;
+    @include tab {
+        display: none;
+    }
+    @include sp {
+        display: none;
+    }
+
+}
+
+.c-header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.c-header__logo {
+    margin-left: 21px;
+    @include sp {
+        margin-left: 8px;
+        width: 70%;
+    }
+}
+
+.c-gnav__menu {
+    display: flex;
+}
+
+.c-gnav__li {
+    &:nth-child(4) {
+        margin-right: 24px;
+        @include pc {
+            margin-right: 0;
+        }
+    }
+}
+
+.c-gnav__item {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 3.3rem 2.25rem;
+    font-family: $main-font;
+    letter-spacing: -0.2px;
+
+    &:hover {
+        background: #00ada0;
+        color: #fff;
+    }
+    @include pc {
+        padding: 3.3rem 1rem;
+    }
+
+    &--contact {
+        background: #00ada0;
+        padding: 33px 38px;
+        color: #fff;
+    }
+}
+
+.c-header__request {
+    text-align: right;
+    color: #fefefe;
+    font-size: 1.4rem;
+    font-feature-settings: "palt";
+    margin-right: 12px;
+    font-weight: 400;
+}
+
+.c-header__spwrapper {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .c-header__spitem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        padding: 13px 0;
+        @include tab {
+            justify-content: flex-start;
+        }
+
+        .c-header__splogo {
+            width: 92%;
+            max-width: 330px;
+        }
+    }
+
+    &--left {
+        width: 56.1%;
+        flex-shrink: 0;
+
+        .c-header__spitem {
+            padding: 11px 0;
+            margin-left: 20px;
+        }
+    }
+
+    &--right {
+        max-width: 280px;
+        width: 100%;
+        display: flex;
+        background: #00ada0;
+        color: #fff;
+
+        .c-header__spitem {
+            width: 50%;
+            flex-direction: column;
+
+            .c-header__icon {
+                width: 43%;
+            }
+
+            &--menuicon {
+                background-color: #000;
+            }
+        }
+
+        .c-header__text {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+    }
+
+}
+
+.c-header__spgnav {
+    position: fixed;
+    background-color: #00ada0;
+    color: #fff;
+    display: block;
+    font-feature-settings: "palt" 1;
+    height: 100vh;
+    overflow: scroll;
+    font-weight: 700;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    font-size: 1.8rem;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s;
+    &.is-show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .c-header__close {
+        text-align: right;
+        display: block;
+        padding: 14px 21px 0;
+
+        &--icon {
+            width: 23px;
+            transform: translateX(-8%);
+        }
+
+        &--text {
+            font-size: 1rem;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+
+    .c-header__spgnavmenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -2px;
+        border-bottom: 1px solid #dbeeec;
+        padding-bottom: 16px;
+    }
+
+    .c-header__spgnavitem {
+        width: 100%;
+    }
+
+    .c-header__link {
+        display: block;
+        text-align: center;
+        padding: 0.93rem 0;
+    }
+
+    .c-header__contact {
+        text-align: center;
+        margin-top: 12px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #dbeeec;
+    }
+
+    .c-header__phone {
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+
+        &--text {
+            font-size: 1.8rem;
+        }
+    }
+
+    .c-header__time {
+        font-size: 1.6rem;
+        color: #00ada0;
+        font-weight: 700;
+        max-width: 290px;
+        width: 100%;
+        background: #fff;
+        margin: 0 auto;
+        margin-top: 7px;
+    }
+
+    .c-header__btn {
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 700;
+        max-width: 290px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dbeeec;
+        margin-top: 26px;
+        padding: 0.42rem 0;
+    }
+
+    .c-header__spsubmenu {
+        margin-top: 14px;
+    }
+
+    .c-header__subitem {
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+
+        &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        &--closemenu {
+            &::before {
+                content: "\f00d";
+                font-weight: 900;
+                margin-right: 12px;
+                font-family: "Font Awesome 5 Free";
+            }
+        }
+    }
+}
+@keyframes fadeIn {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+
+    }
+}
+@keyframes fadeOut {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+
+    }
+}

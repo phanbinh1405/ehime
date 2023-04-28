@@ -1,0 +1,21 @@
+.company {
+
+    .company-content {
+        margin-bottom: 130px;
+    }
+    .c-companymainvisual {
+        background: url("../../assets/img/company/companymainvisual.jpg") no-repeat
+        center;
+        min-height: 400px;
+        position: relative;
+        background-size: cover;
+    }
+
+    .company-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 50px;
+    }
+}

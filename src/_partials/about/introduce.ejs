@@ -1,0 +1,23 @@
+<section class="c-introduce">
+    <div class="c-introduce__wrapper l-container--1920">
+        <div class="c-introduce__list">
+            <% if (about.introduce) { %> <% about.introduce.forEach((item,i)=> { %>
+            <div class="c-introduce__item c-introduce__item--<%=i+1%>">
+                <div class="c-introduce__text">
+                    <h2 class="c-introduce__title"><%- item.title %></h2>
+                    <div class="c-introduce__description">
+                        <%-item.description%>
+                    </div>
+                </div>
+                <div class="c-introduce__imgbox">
+                    <img
+                    src="<%= item.img%>"
+                    alt="<%= item.title  %> "
+                    class="c-introduce__img"
+                    >
+                </div>
+            </div>
+            <% }) %> <% } %>
+        </div>
+    </div>
+</section>

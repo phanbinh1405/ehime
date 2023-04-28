@@ -1,0 +1,56 @@
+.c-subpagemainvisual {
+    background: url("../../assets/img/about/bg.jpg") no-repeat center;
+    min-height: 400px;
+    position: relative;
+    background-size: cover;
+
+    .c-mainvisual__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 44px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.3s;
+
+        @include tab {
+            bottom: 40%;
+        }
+        @include sp {
+            bottom: 50%;
+        }
+    }
+
+    .c-mainvisual__title {
+        font-family: "Libre Franklin", sans-serif;
+        font-size: 5rem;
+        font-weight: 700;
+        color: #fefefe;
+        margin-bottom: -12px;
+        transition: all 0.3s;
+
+        @include sp {
+            font-size: 4rem;
+        }
+    }
+
+    .c-mainvisual__subtitle {
+        font-feature-settings: "palt";
+        font-size: 2.4rem;
+        color: #fefefe;
+        font-weight: 700;
+        background-color: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: hidden;
+        padding: 0;
+        transition: all 0.3s;
+
+        @include sp {
+            font-size: 1.8rem;
+        }
+    }
+}
