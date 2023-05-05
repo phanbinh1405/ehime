@@ -201,12 +201,12 @@
             {
                 "title": "愛媛シゴト図鑑とは",
                 "description": "愛媛シゴト図鑑は、「仕事選びの不安を無くす」をコンセプトに「自分がやりたいことが分からない」「どの企業に応募しようか迷う」「自分の人生と向き合って仕事を探したい」そんな方の一人ひとりが自分に合った働き方ができるよう応援しています。<br><span class='c-introduce__description--bottom'>企業の中身が見えなくて不安を感じ、自分が入社した後の想像がつかない学生さん。実際に働かれている方のインタビューを通して、会社の雰囲気、働くことの喜びを感じとってください。会社のいいところだけでなく、大変なところや働く人の思い、葛藤なども紹介しています。そのため、必ず職場を訪ねて、本音を引き出す独自の取材を行っています。</span>",
-                "img":"./assets/img/about/img1.jpg"
+                "img": "./assets/img/about/img1.jpg"
             },
             {
                 "title": "わたしたちについて",
                 "description": " これまで45年に渡り、愛媛の経済情報を専門に取材し、週刊愛媛経済レポ ートを発行してき ました。その中 で、愛媛にあるたくさんの素晴 らしい企業の皆様にお会いしました。わたしたちは愛媛 には社員を幸せにしている会社が多くあり、そして働くこ とは辛いばかり じゃなく、わ たしたちの人生の価値を高めてくれるものと感じてい ます。県内企業を見続けてきた記者ならではの視点で、今日もいろいろな職場を訪ねて ､お話を聞いています。 ",
-                "img":"./assets/img/about/img2.jpg"
+                "img": "./assets/img/about/img2.jpg"
             }
         ],
         "operatingtitle": "運営会社",
@@ -248,7 +248,6 @@
                 "td": "example@gmail.com"
             }
         ]
-        
     },
     "contactus": {
         "title": "一般･学生の皆様へ",
@@ -256,138 +255,136 @@
         "table": [
             {
                 "th": "氏名<span class='u-rednote'>※</span>",
-                "labelfor":"name"
+                "labelfor": "name"
             },
             {
                 "th": "会社・学校名",
-                "labelfor":"workplace"
+                "labelfor": "workplace"
             },
             {
                 "th": "住所",
-                "labelfor":"address"
+                "labelfor": "address"
             },
             {
                 "th": "電話番号<span class='u-rednote'>※</span>",
-                "labelfor":"phone"
+                "labelfor": "phone"
             },
             {
                 "th": "メールアドレス<span class='u-rednote'>※</span>",
-                "labelfor":"mail"
+                "labelfor": "mail"
             },
             {
                 "th": "本サイトを知ったきっかけ",
                 "tdstop": [
                     {
-                        "td": "検索" ,
-                        "for":"search1",
-                        "type":"checkbox"
-                    }
-                    ,
-                    { 
-                        "td": "冊子","for":"booklet",
-                        "type":"checkbox" 
+                        "td": "検索",
+                        "for": "search1",
+                        "type": "checkbox"
+                    },
+                    {
+                        "td": "冊子",
+                        "for": "booklet",
+                        "type": "checkbox"
                     },
                     {
                         "td": "ネット広告",
-                        "for":"ads",
-                        "type":"checkbox"
+                        "for": "ads",
+                        "type": "checkbox"
                     },
-                    { 
-                        "td": "口コミ" ,
-                        "for":"word",
-                        "type":"checkbox"
+                    {
+                        "td": "口コミ",
+                        "for": "word",
+                        "type": "checkbox"
                     },
-                    { 
-                        "td": "チラシ" ,
-                        "for":"flyer",
-                        "type":"checkbox"
+                    {
+                        "td": "チラシ",
+                        "for": "flyer",
+                        "type": "checkbox"
                     }
                 ],
-                "tdsbottom":[
-                    { 
+                "tdsbottom": [
+                    {
                         "td": "検索",
-                        "for":"search2" ,
-                        "type":"checkbox"
+                        "for": "search2",
+                        "type": "checkbox"
                     },
-                    { 
+                    {
                         "td": "",
-                        "for":"others" ,
-                        "type":"text"
+                        "for": "others",
+                        "type": "text"
                     }
                 ],
-                "labelfor":"from"
-
+                "labelfor": "from"
             },
             {
                 "th": "お問い合わせ内容<span class='u-rednote'>※</span>",
-                "labelfor":"inquiry"
+                "labelfor": "inquiry"
             }
         ],
         "btn": "この内容で送信する"
     },
-
     "company": {
         "listCompany": [
             {
                 "image": "./assets/img/company/company-1.jpg",
                 "title": "株式会社悠遊社",
-                "subTitle":"愛媛県松山市",
+                "subTitle": "愛媛県松山市",
                 "description": "「とてもやりがいのある仕事です。<br>若い人こそ飛び込んで来てください。」",
                 "tag": "介護・福祉"
             },
             {
                 "image": "./assets/img/company/company-2.jpg",
                 "title": "やまと印刷株式会社",
-                "subTitle":"愛媛県四国中央市",
+                "subTitle": "愛媛県四国中央市",
                 "description": "やりたいことを汲んでくれるから<br>精一杯いろいろなことに挑戦できる",
                 "tag": "印刷"
             },
             {
                 "image": "./assets/img/company/company-3.jpg",
                 "title": "北辰会グループ",
-                "subTitle":"愛媛県西条市",
+                "subTitle": "愛媛県西条市",
                 "description": "コミュニケーションでつながり深める<br>「気づき」を成長の原動力に",
                 "tag": "介護・福祉"
             },
             {
                 "image": "./assets/img/company/company-4.jpg",
                 "title": "株式会社フロントエンド",
-                "subTitle":"愛媛県四国中央市",
+                "subTitle": "愛媛県四国中央市",
                 "description": "その会社で何をするのかより、<br>誰と一緒に働きたいかで選んだ",
                 "tag": "ソフトウェア"
             },
             {
                 "image": "./assets/img/company/company-5.jpg",
                 "title": "株式会社フジ",
-                "subTitle":"愛媛県松山市",
+                "subTitle": "愛媛県松山市",
                 "description": "採用担当に積極的にアプローチ<br>第一志望入社を叶え、現場で活躍中",
                 "tag": "スーパーマーケット"
             },
             {
                 "image": "./assets/img/company/company-6.jpg",
                 "title": "株式会社フジファミリーフーズ",
-                "subTitle":"愛媛県松山市",
+                "subTitle": "愛媛県松山市",
                 "description": "お客様が満足するサービス提供を<br>目指しスタッフ全員が連携し、<br>臨機応変な対応を",
                 "tag": "外食"
             },
             {
                 "image": "./assets/img/company/company-7.jpg",
                 "title": "株式会社アート不動産",
-                "subTitle":"愛媛県松山市",
+                "subTitle": "愛媛県松山市",
                 "description": "若い社員も意見を言える風通しの良さ。<br>就活では会社の雰囲気を最優先",
                 "tag": "不動産"
             },
             {
                 "image": "./assets/img/company/company-8.jpg",
                 "title": "株式会社ありがとうサービス",
-                "subTitle":"愛媛県今治市",
+                "subTitle": "愛媛県今治市",
                 "description": "自分の好きなことを仕事に<br>仲間とともに日々成長を実感",
                 "tag": "専門店"
             },
             {
                 "image": "./assets/img/company/company-9.jpg",
                 "title": "株式会社イオタオーエーシステム",
-                "subTitle":"愛媛県松山市",
+                "subTitle": "愛媛県松山市",
                 "description": "顧客とのコミュニケーションを大切に、<br>女性初のエンジニアとして成長を続ける",
                 "tag": "通信・インフラ"
             }
@@ -398,57 +395,79 @@
             {
                 "image": "./assets/img/interview/interview-1.jpg",
                 "title": "就活には業界研究を<br>愛媛県の企業冊子を作成",
-                "subTitle":"愛媛大学理学部物理学科　教授　",
+                "subTitle": "愛媛大学理学部物理学科　教授　",
                 "tag": "経営者インタビュー"
             },
             {
                 "image": "./assets/img/interview/interview-2.jpg",
                 "title": "他人も巻き込み 一生使える自己分析を",
-                "subTitle":"(株)四国中央キャリア　代表取締役",
+                "subTitle": "(株)四国中央キャリア　代表取締役",
                 "tag": "就活コラム"
             },
             {
                 "image": "./assets/img/interview/interview-3.jpg",
                 "title": "社会の変化に迅速に対応<br>業種を超えた事業展開も",
-                "subTitle":"(株)愛媛銀行 頭取",
+                "subTitle": "(株)愛媛銀行 頭取",
                 "tag": "経営者インタビュー"
             },
             {
                 "image": "./assets/img/interview/interview-4.jpg",
                 "title": "県内食品業界はもちろん、愛媛全域が盛り上がるようなイベントを。",
-                "subTitle":"",
+                "subTitle": "",
                 "tag": "就活コラム"
             },
             {
                 "image": "./assets/img/interview/interview-5.jpg",
                 "title": "興味を持ち追求すること それが私の仕事の原動力",
-                "subTitle":"大王海運グループ",
+                "subTitle": "大王海運グループ",
                 "tag": "経営者インタビュー"
             },
             {
                 "image": "./assets/img/interview/interview-6.jpg",
                 "title": "事前の知識や資格は不要 「お年寄りが好き」で十分",
-                "subTitle":"株式会社悠遊社",
+                "subTitle": "株式会社悠遊社",
                 "tag": "経営者インタビュー"
             },
             {
                 "image": "./assets/img/interview/interview-7.jpg",
                 "title": "事前の知識や資格は不要 「お年寄りが好き」で十分",
-                "subTitle":"株式会社悠遊社",
+                "subTitle": "株式会社悠遊社",
                 "tag": "経営者インタビュー"
             },
             {
                 "image": "./assets/img/interview/interview-8.jpg",
                 "title": "循環器主体に地域医療を支え続けて35年<br>外科を含めた緊急・救急対応にも意欲",
-                "subTitle":"喜多医師会病院 病院長",
+                "subTitle": "喜多医師会病院 病院長",
                 "tag": "経営者インタビュー"
             },
             {
                 "image": "./assets/img/interview/interview-9.jpg",
                 "title": "就活経験者　匿名インタビュー2",
-                "subTitle":"就活経験者",
+                "subTitle": "就活経験者",
                 "tag": "就活コラム"
             }
         ]
+    },
+    "companyPost": {
+        "slide": [
+            {
+                "img": "./assets/img/companypost/slide-1.jpg",
+                "imgCaption": "若手社員　福島 快人さん"
+            },
+            {
+                "img": "./assets/img/companypost/slide-1.jpg",
+                "imgCaption": "若手社員　福島 快人さん"
+            },
+            {
+                "img": "./assets/img/companypost/slide-1.jpg",
+                "imgCaption": "若手社員　福島 快人さん"
+            }
+        ],
+        "date": "2018.08.31",
+        "name": "株式会社悠遊社",
+        "location": "愛媛県松山市",
+        "message": "「とてもやりがいのある仕事です。<br class='u-breakline--pc'>若い人こそ飛び込んで来てください。」",
+        "tag": "介護・福祉",
+        "content": "介護保険制度施行に合わせ、松山市で誕生。基本理念は｢心のケアを大切に｣。多様化する利用者ニーズに対応し、生活環境を尊重した総合的な介護サービスの提供を行っている。県内に7拠点を構え、各拠点が地域の要望に応じた介護サービスを提供し、地域にとって不可欠な存在となることを目指している。"
     }
 }

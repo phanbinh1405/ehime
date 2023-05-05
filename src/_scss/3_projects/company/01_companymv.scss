@@ -1,7 +1,7 @@
 .company {
-
     .company-content {
         margin-bottom: 130px;
+        width: 90%;
     }
     .c-companymainvisual {
         background: url("../../assets/img/company/companymainvisual.jpg") no-repeat
@@ -17,5 +17,16 @@
         flex-wrap: wrap;
         border-bottom: 1px solid #ccc;
         padding-bottom: 50px;
+        margin: 0 -15px;
+        @include tab {
+            margin: 0 auto;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include sp {
+            margin: 0 auto;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }

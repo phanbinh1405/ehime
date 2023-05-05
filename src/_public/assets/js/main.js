@@ -53,3 +53,12 @@ $(".c-header__close").click(function(){
     $(".c-header__spgnav").removeClass('is-show')
     $("#p-main").removeClass('u-overflowhidden')
 })
+
+$(".companypost-slider__item").slick({
+    arrows: false,
+    autoplay: true,
+    dots: true,
+    autoplaySpeed: 2500,
+    cssEase: "linear",
+    dotsClass: "c-pickup__dots",
+})

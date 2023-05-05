@@ -1,0 +1,36 @@
+<section class="companypost-slider">
+    <div class="l-container companypost-slider__inner">
+        <div class="c-breadcrumb">
+            <a href="/" class="c-breadcrumb__home">ホーム</a>
+            <span class="c-breadcrumb__arrow">></span>
+            <a href="../../company.html" class="c-breadcrumb__home">企業一覧</a>
+            <span class="c-breadcrumb__arrow">></span>
+            <span class="c-breadcrumb__current">株式会社悠遊社</span>
+        </div>
+
+            <div class="companypost-slider__content">
+                <% if (companyPost) { %>
+                        <div class="companypost-slider__item">
+                            <% companyPost.slide.forEach(item => { %>
+                                <div class="company-slider__itemleft">
+                                    <img class="company-slide__img" src="<%- item.img %>" alt="<%= item.name %>">
+                                    <p class="company-slide__imgcaption"><%= item.imgCaption %></p>
+                                </div>
+                            <% }) %>
+                        </div>
+                    <% } %>
+                    <div class="company-slider__itemright">
+                        <div class="company-slider__title">
+                            <p class="company-slider__date"><%= companyPost.date %></p>
+                            <h2 class="company-slider__name"><%= companyPost.name %></h2>
+                            <span class="company-slider__location"><%= companyPost.location %></span>
+                            <h3 class="company-slider__message"><%- companyPost.message %></h3>
+                        </div>
+                        <p class="company-slider__tags"><%= companyPost.tag %></p>
+                        <p class="company-slider__content">
+                            <%- companyPost.content %>
+                        </p>
+                    </div>
+            </div>
+    </div>
+</section>

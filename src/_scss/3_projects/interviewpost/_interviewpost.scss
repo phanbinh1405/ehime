@@ -1,0 +1,275 @@
+.interviewpost {
+  .interviewpost-overview {
+      margin:  0 auto;
+      @include tab {
+        width: 90%;
+      }
+      @include sp {
+        width: 90%;
+      }
+  }
+  .c-interviewpostmv {
+    background: url("../../assets/img/interview/mainvisual.jpg") no-repeat
+      center;
+    min-height: 400px;
+    position: relative;
+    background-size: cover;
+  }
+  .interviewpost-overview__img {
+    width: 50%;
+    @include tab {
+      width: 100%;
+    }
+    @include sp {
+      width: 100%;
+    }
+  }
+  .interviewpost-overview__content {
+    margin-top: 35px;
+    display: flex;
+    @include tab {
+      flex-direction: column;
+    }
+    @include sp {
+      flex-direction: column;
+    }
+  }
+  .interviewpost-overview__info {
+    padding: 40px;
+    flex: 1;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #edf9f8;
+    @include tab {
+      align-items: center;
+    }
+    @include sp {
+      padding: 20px;
+    }
+  }
+
+  .intervewpost-overview__datecat {
+    margin-bottom: 20px;
+    @include sp {
+      margin-bottom: 10px;
+    }
+  }
+
+  .intervewpost-overview__date,
+  .intervewpost-overview__cat {
+    display: inline-block;
+  }
+
+  .intervewpost-overview__date {
+    font-size: 1.4rem;
+    color: #000;
+    @include sp {
+      font-size: 1.2rem;
+    }
+  }
+
+  .intervewpost-overview__cat {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #00ada0;
+    margin-left: 16px;
+    padding: 3px 10px;
+    font-feature-settings: "palt" 1;
+    @include sp {
+      font-size: 1.3rem;
+      margin-left: 8px;
+    }
+  }
+
+  .interviewpost-overview__title {
+    font-size: 3rem;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 20px;
+    @include tab {
+      text-align: center;
+    }
+    @include sp {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+    }
+  }
+
+  .interviewpost-overview__position,
+  .interviewpost-overview__born,
+  .interviewpost-overview__email {
+    font-size: 1.4rem;
+    @include sp {
+      font-size: 1.2rem;
+    }
+  }
+  .interviewpost-overview__position {
+    margin-bottom: 3px;
+  }
+  .interviewpost-overview__born {
+    margin-bottom: 10px;
+    @include sp {
+      margin-bottom: 5px;
+    }
+  }
+  .interviewpost-overview__name {
+    font-size: 2.4rem;
+    @include sp {
+      font-size: 2.2rem;
+    }
+  }
+
+  .interviewpost-detail {
+    width: 780px;
+    margin: 94px auto 105px;
+    max-width: 90%;
+    @include sp {
+      margin: 47px auto 50px;
+    }
+  }
+  .interviewpost-detail__txt {
+    & + .interviewpost-detail__txt {
+      margin-top: 38px;
+      @include sp {
+        margin-top: 19px;
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #00ada0;
+      font-feature-settings: "palt" 1;
+      margin-bottom: 12px;
+      @include sp {
+        font-size: 1.8rem;
+        margin-bottom: 6px;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      color: #000;
+      font-feature-settings: "palt" 1;
+      line-height: 2;
+      @include sp {
+        font-size: 1.4rem;
+      }
+    }
+    &.interviewpost-detail__txt--noheader {
+      p {
+        font-family: $kozuka;
+      }
+    }
+  }
+
+  .interviewpost-detail__img {
+    margin: 48px 0;
+    text-align: center;
+    img {
+      width: 600px;
+      object-fit: cover;
+    }
+    @include sp {
+      margin: 24px 0;
+    }
+  }
+
+  .interviewpost-detail__social {
+    position: relative;
+    text-align: center;
+    padding: 49px 0;
+    margin: 128px 0 136px;
+    @include sp {
+      margin: 64px 0 68px;
+      padding: 25px 0 30px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: 0;
+      background: url(../../assets/img/interviewpost/top-quote.png) no-repeat;
+      top: 0;
+      left: 0;
+      height: 25px;
+      @include tab {
+        background-size: contain;
+      }
+      @include sp {
+        background-size: contain;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      background: url(../../assets/img/interviewpost/bottom-quote.png) no-repeat;
+      bottom: -6px;
+      left: 0;
+      height: 25px;
+      @include tab {
+        background-size: contain;
+      }
+      @include sp {
+        background-size: contain;
+      }
+    }
+    p {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #020000;
+      font-feature-settings: "palt" 1;
+      margin-bottom: 26px;
+      @include sp {
+        font-size: 1.6rem;
+        margin-bottom: 7px;
+      }
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 240px;
+      min-height: 60px;
+      border-radius: 30px;
+      font-size: 1.8rem;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      @include tab {
+        margin-top: 15px;
+      }
+      @include sp {
+        font-size: 1.6rem;
+        width: 120px;
+        min-height: 30px;
+        margin-top: 15px;
+      }
+    }
+
+    .intervewpost-overview__box {
+      display: flex;
+      justify-content: space-between;
+      @include tab {
+        flex-direction: column;
+        align-items: center;
+      }
+      @include sp {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .interviewpost-detail__fb {
+      background-color: #3b5998;
+    }
+    .interviewpost-detail__tw {
+      background-color: #00a9e8;
+    }
+    .interviewpost-detail__line {
+      background-color: #00df1f;
+    }
+  }
+}

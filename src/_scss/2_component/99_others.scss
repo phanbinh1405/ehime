@@ -122,7 +122,14 @@
                 background-size: cover;
             }
         }
+    } 
+    &--reverse {
+        &::after {
+            left: 4.4%;
+            transform: rotate(-180deg);
+        }
     }
+
 }
 
 .c-pagination {

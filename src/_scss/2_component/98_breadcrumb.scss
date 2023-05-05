@@ -1,5 +1,5 @@
 .c-breadcrumb {
-    padding: 25px 0 33px;
+    padding: 25px 0 27px;
     border-bottom: 1px solid #ccc;
     text-align: left;
     @include tab {
@@ -7,7 +7,7 @@
         margin: 0 auto;
     }
     @include sp {
-        padding: 20px 0;
+        padding: 20px 0 15px;
     }
 
     .c-breadcrumb__home {
@@ -16,10 +16,14 @@
         font-weight: 400;
         border-bottom: 1px solid #00ada0;
         padding-bottom: 3px;
+        margin-bottom: 5px;
+        display: inline-block;
     }
 
     .c-breadcrumb__arrow {
         padding: 0 12px;
+        margin-bottom: 5px;
+        display: inline-block;
     }
 
     .c-breadcrumb__current {
@@ -27,5 +31,7 @@
         color: #000;
         font-weight: 400;
         font-feature-settings: "palt";
+        margin-bottom: 5px;
+        display: inline-block;
     }
 }
