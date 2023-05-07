@@ -4,6 +4,7 @@
     margin: 50px 15px;
     @include tab {
         width: unset;
+        margin: 25px 8px;
     }
     @include sp {
         width: unset;
@@ -77,6 +78,9 @@
         margin-top: 10px;
         color: #00ada0;
         line-height: 1.7;
+        @include sp {
+            margin-top: 5px;
+        }
     }
     .c-card__tag {
         display: inline-block;

@@ -1,583 +1,746 @@
 .companypost {
-    .c-interviewmainvisual {
-        background: url("../../assets/img/companypost/mainvisual.jpg") no-repeat
-        center;
-        min-height: 400px;
-        position: relative;
-        background-size: cover;
-    }
+	.c-interviewmainvisual {
+		background: url("../../assets/img/companypost/mainvisual.jpg") no-repeat
+			center;
+		min-height: 400px;
+		position: relative;
+		background-size: cover;
+	}
 
-    .companypost-slider {
-        background: url("../../assets/img/companypost/slide_background.jpg");
-        padding-bottom: 62px;
-    }
-
-    .companypost-slider__inner {
-        width: 96%;
-        @include tab {
-            width: 90%;
-            margin: 0 auto;
-        }
+	.companypost-slider {
+		background: url("../../assets/img/companypost/slide_background.jpg");
+		padding-bottom: 62px;
         @include sp {
-            width: 90%;
-            margin: 0 auto;
+            padding-bottom: 31px;
         }
-    }
+	}
 
-    .companypost-slider__content {
-        margin-top: 32px;
-        position: relative;
-        @include tab {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+	.companypost-slider__inner {
+		width: 96%;
+		@include tab {
+			width: 90%;
+			margin: 0 auto;
+		}
+		@include sp {
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+
+	.companypost-slider__content {
+		margin-top: 32px;
+		position: relative;
+		@include tab {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		@include sp {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	.companypost-slider__item {
+		position: relative;
+		width: 680px;
+		@include tab {
+			max-width: 90%;
+		}
+		@include sp {
+			max-width: 100%;
+		}
+	}
+	.company-slider__itemleft {
+		width: 680px;
+		position: relative;
+		@include tab {
+			max-width: 90%;
+		}
+		@include sp {
+			max-width: 90%;
+		}
+	}
+
+	.company-slide__imgcaption {
+		background: #1cbbb4;
+		color: #fbfbfb;
+		font-size: 1.8rem;
+		font-weight: 700;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		padding: 21px 19px;
         @include sp {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 10px;
+            font-size: 1.6rem;
         }
-    }
+	}
 
-    .companypost-slider__item {
-        position: relative;
-        width: 680px;
-        @include tab {
-            max-width: 90%;
-        }
+	.company-slider__itemright {
+		position: absolute;
+		width: 530px;
+		min-height: 459px;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+		background-color: rgb(255, 255, 255);
+		padding: 20px 30px;
+		@include tab {
+			position: relative;
+			transform: translateY(0);
+			margin-top: 50px;
+			width: 680px;
+			max-width: 90%;
+		}
+		@include sp {
+			position: relative;
+			transform: translateY(0);
+			margin-top: 50px;
+			width: 680px;
+			max-width: 100%;
+			padding: 15px;
+            min-height: auto;
+		}
+	}
+
+	.company-slider__date,
+	.company-slider__location {
+		font-size: 1.4rem;
+		color: #000;
+		font-feature-settings: "palt" 1;
+		letter-spacing: 0.03em;
+		margin-bottom: 5px;
+	}
+
+	.company-slider__name {
+		font-size: 3rem;
+		color: #000;
+		font-weight: 700;
+		margin-bottom: 3px;
         @include sp {
-            max-width: 90%;
+            font-size: 2.6rem;
         }
-    }
-    .company-slider__itemleft {
-        width: 680px;
-        position: relative;
-        @include tab {
-            max-width: 90%;
-        }
+	}
+
+	.company-slider__message {
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: #00ada0;
+		font-feature-settings: "palt" 1;
+		margin-top: 18px;
         @include sp {
-            max-width: 90%;
+            font-size: 2rem;
         }
-    }
+	}
 
-    .company-slide__imgcaption {
-        background: #1cbbb4;
-        color: #fbfbfb;
-        font-size: 1.8rem;
-        font-weight: 700;
-        position: absolute;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        padding: 21px 19px;
-    }
-
-    .company-slider__itemright {
-        position: absolute;
-        width: 530px;
-        min-height: 459px;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
-        background-color: rgb(255, 255, 255);
-        padding: 20px 30px;
-        @include tab {
-            position: relative;
-            transform: translateY(0);
-            margin-top: 50px;
-            width: 680px;
-            max-width: 90%;
-        }
+	.company-slider__tags {
+		font-size: 1.4rem;
+		color: #000;
+		background-color: #cccccc;
+		background: #ccc;
+		padding: 1px 9px;
+		border-radius: 10px;
+		width: max-content;
+		margin-top: 15px;
+		font-feature-settings: "palt" 1;
+		padding: 5px 18px;
+		border-radius: 15px;
         @include sp {
-            position: relative;
-            transform: translateY(0);
-            margin-top: 50px;
-            width: 680px;
-            max-width: 90%;
+            font-size: 1.2rem;
         }
-    }
+	}
 
-    .company-slider__date,
-    .company-slider__location {
-        font-size: 1.4rem;
-        color: #000;
-        font-feature-settings: "palt" 1;
-        letter-spacing: 0.03em;
-        margin-bottom: 5px;
-    }
-
-    .company-slider__name {
-        font-size: 3rem;
-        color: #000;
-        font-weight: 700;
-        margin-bottom: 3px;
-    }
-
-    .company-slider__message {
-        font-size: 2.4rem;
-        font-weight: 700;
-        color: #00ada0;
-        font-feature-settings: "palt" 1;
-        margin-top: 18px;
-    }
-
-    .company-slider__tags {
-        font-size: 1.4rem;
-        color: #000;
-        background-color: #cccccc;
-        background: #ccc;
-        padding: 1px 9px;
-        border-radius: 10px;
-        width: max-content;
-        margin-top: 15px;
-        font-feature-settings: "palt" 1;
-        padding: 5px 18px;
-        border-radius: 15px;
-    }
-
-    .company-slider__content {
-        font-size: 1.5rem;
-        color: #000;
-        margin-top: 22px;
-        letter-spacing: 0;
-        font-feature-settings: "palt" 1;
-        line-height: 1.97;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 5;
-        -webkit-box-orient: vertical;
-    }
-
-    .c-pickup__dots {
-        display: flex;
-        margin-top: 31px;
-        position: absolute;
-        bottom: -31px;
-        left: 50.4%;
-        transform: translateX(-50%);
+	.company-slider__content {
+		font-size: 1.5rem;
+		color: #000;
+		margin-top: 22px;
+		letter-spacing: 0;
+		font-feature-settings: "palt" 1;
+		line-height: 1.97;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 5;
+		-webkit-box-orient: vertical;
         @include sp {
-        margin-top: 14px;
+            margin-top: 11px;
+            display: block;
         }
+	}
 
-        li {
-        padding: 0 10px;
-        position: relative;
-        transition: all 0.3s;
+	.c-pickup__dots {
+		display: flex;
+		margin-top: 31px;
+		position: absolute;
+		bottom: -31px;
+		left: 50.4%;
+		transform: translateX(-50%);
+		@include sp {
+			margin-top: 14px;
+		}
 
-        &:hover {
-            opacity: 0.7;
-            cursor: pointer;
-        }
+		li {
+			padding: 0 10px;
+			position: relative;
+			transition: all 0.3s;
+
+			&:hover {
+				opacity: 0.7;
+				cursor: pointer;
+			}
+			@include sp {
+				padding: 0 4px;
+			}
+
+			&.slick-active {
+				pointer-events: none;
+				button {
+					background-color: #000;
+				}
+
+				&::after {
+					position: absolute;
+					content: "";
+					width: 18px;
+					height: 18px;
+					border: 1px solid black;
+					border-radius: 50%;
+					left: 50%;
+					transform: translate(-50%, 9%);
+					@include sp {
+						width: 12px;
+						height: 12px;
+						transform: translate(-50%, 32%);
+					}
+				}
+			}
+		}
+
+		button {
+			font-size: 0;
+			padding: 5px;
+			background-color: #1cbbb4;
+			border: transparent;
+			border-radius: 50%;
+			vertical-align: middle;
+			transition: all 0.3s;
+
+			&:hover {
+				opacity: 0.7;
+				cursor: pointer;
+			}
+			@include sp {
+				padding: 0.33rem;
+			}
+		}
+	}
+
+	// Data info
+	.companypost-info {
+		margin-top: 41px;
+		width: 96%;
+		@include sp {
+			width: 90%;
+		}
+	}
+	.companypost-info__data {
+		border-radius: 10px;
+		background-color: #f8b616;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		@include tab {
+			flex-direction: column;
+		}
+		@include sp {
+			flex-direction: column;
+		}
+	}
+
+	.companypost-info__detail {
+		background-color: #efefef;
+		flex: 1;
+		padding: 28px 0 34px 23px;
+		@include tab {
+			padding-right: 23px;
+		}
+		@include sp {
+			padding: 14px 14px 17px;
+		}
+	}
+
+	.companypost-info__datatag {
+		color: #fbfbfb;
+		font-size: 2rem;
+		font-weight: 700;
+		padding: 20px;
+		width: 190px;
+		text-align: center;
         @include sp {
-            padding: 0 4px;
+            padding: 10px;
+            font-size: 1.8rem;
         }
+	}
 
-        &.slick-active {
-            pointer-events: none;
-            button {
-            background-color: #000;
+	.companypost-info__name {
+		color: #000;
+		font-size: 2rem;
+		font-weight: 700;
+		display: inline-block;
+	}
+
+	.companypost-info__url {
+		margin-left: 86px;
+		display: inline-block;
+		@include sp {
+			margin-left: 0;
+			display: block;
+		}
+	}
+
+	.companypost-info__urlcontent {
+		position: relative;
+		display: inline-block;
+		font-size: 1.4rem;
+		color: #1cbbb4;
+		font-weight: 700;
+		&::after {
+			content: "\f35d";
+			position: absolute;
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			font-size: 10px;
+			right: -20px;
+			top: 5px;
+		}
+	}
+
+	.companypost-info__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 13px;
+		margin-left: -4px;
+		@include sp {
+			margin-left: 0;
+		}
+	}
+
+	.companypost-info__item {
+		display: flex;
+		align-items: center;
+		width: 25%;
+		margin-top: 12px;
+		@include tab {
+			width: 50% !important;
+			align-items: flex-start;
+		}
+		@include sp {
+			width: 100% !important;
+			align-items: flex-start;
+		}
+
+		&.companypost-info__item--w20 {
+			margin-left: 4.5%;
+			width: 25%;
+			@include tab {
+				margin-left: 0;
+			}
+			@include sp {
+				margin-left: 0;
+			}
+			.companypost-info__itemtext {
+				letter-spacing: 0em;
+			}
+		}
+
+		&.companypost-info__item--w50 {
+			width: 45.1%;
+		}
+
+		&.companypost-info__item--w100 {
+			width: 100%;
+			margin-top: 10px;
+		}
+	}
+
+	.companypost-info__itemtag {
+		color: #000;
+		background-color: #fff;
+		font-size: 1.4rem;
+		border-radius: 11px;
+		padding: 2px;
+		width: 80px;
+		height: 24px;
+		text-align: center;
+		@include tab {
+			flex-shrink: 0;
+		}
+		@include sp {
+			flex-shrink: 0;
+		}
+	}
+
+	.companypost-info__itemtext {
+		margin-left: 19px;
+		font-feature-settings: "palt" 1;
+		letter-spacing: -0.06em;
+		@include sp {
+			margin-left: 10px;
+		}
+	}
+
+	.companypost-info__tel {
+		letter-spacing: -0.04em;
+	}
+
+	.companypos-info__archivement {
+		display: flex;
+		margin-left: -4px;
+		margin-top: 20px;
+		margin-right: 23px;
+		@include tab {
+			margin-right: 0;
+		}
+		@include sp {
+			margin-right: 0;
+			flex-direction: column;
+		}
+	}
+
+	.companypos-info__archivementtag {
+		color: #1cbbb4;
+		font-size: 1.5rem;
+		font-weight: 700;
+		background-color: #e3f8f8;
+		padding: 9px 15px;
+	}
+
+	.companypos-info__archivementtext {
+		background-color: #ffffff;
+		color: #000;
+		font-size: 1.3rem;
+		font-weight: 700;
+		padding: 9px 20px;
+		height: 40px;
+		flex: 1;
+		letter-spacing: 0.01em;
+	}
+
+	.conpanypost-info__strength {
+		margin-top: 98px;
+        @include sp {
+            margin-top: 49px;
+        }
+	}
+
+	.companypost-info__heading {
+		position: relative;
+		width: 100%;
+		max-width: 482px;
+		margin: 0 auto;
+		text-align: center;
+		@include sp {
+			width: 90%;
+		}
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			background: url(../../assets/img/about/topquote.png) no-repeat;
+			top: 1px;
+			left: -1px;
+			height: 100%;
+			background-size: contain;
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			background: url(../../assets/img/about/bottomquote.png) no-repeat;
+			bottom: -1px;
+			left: -3px;
+			height: 26%;
+			background-size: contain;
+			@include sp {
+				background-position: center;
+				height: 50%;
+				bottom: -8px;
+			}
+		}
+	}
+
+	.companypost-info__title {
+		font-size: 2.6rem;
+		font-weight: 700;
+		color: #020000;
+		padding: 32px 0;
+		letter-spacing: 0.01em;
+		font-feature-settings: "palt" 1;
+		@include sp {
+			font-size: 2.2rem;
+			padding: 20px 0;
+		}
+	}
+
+	.companypost-info__strengthcontent {
+		max-width: 780px;
+		margin: 33px auto 0;
+	}
+
+	.companypost-info__text {
+		& + .companypost-info__text {
+			margin-top: 40px;
+		}
+		h3 {
+			font-size: 2rem;
+			color: #00ada0;
+			font-weight: 700;
+			letter-spacing: -0.03em;
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 1.6rem;
+			color: #000000;
+			line-height: 2;
+			font-feature-settings: "palt" 1;
+			letter-spacing: 0;
+		}
+        @include sp {
+            & + .companypost-info__text {
+                margin-top: 20px;
             }
-
-            &::after {
-            position: absolute;
-            content: "";
-            width: 18px;
-            height: 18px;
-            border: 1px solid black;
-            border-radius: 50%;
-            left: 50%;
-            transform: translate(-50%, 9%);
-            @include sp {
-                width: 12px;
-                height: 12px;
-                transform: translate(-50%, 32%);
+            h3 {
+                font-size: 1.8rem;
+                margin-bottom: 5px;
             }
+            p {
+                font-size: 1.4rem;
             }
         }
-        }
-
-        button {
-        font-size: 0;
-        padding: 5px;
-        background-color: #1cbbb4;
-        border: transparent;
-        border-radius: 50%;
-        vertical-align: middle;
-        transition: all 0.3s;
-
-        &:hover {
-            opacity: 0.7;
-            cursor: pointer;
-        }
+	}
+	.companypost-info__service {
+		margin-top: 80px;
         @include sp {
-            padding: 0.33rem;
-        }
-        }
-    }
-
-    // Data info
-    .companypost-info {
-        margin-top: 41px;
-        width: 96%;
-    }
-    .companypost-info__data {
-        border-radius: 10px;
-        background-color: #f8b616;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        @include tab {
-            flex-direction: column;
-        }
-        @include sp {
-            flex-direction: column;
-        }
-    }
-
-    .companypost-info__detail {
-        background-color: #efefef;
-        flex: 1;
-        padding: 28px 0 34px 23px;
-        @include tab {
-            padding-right: 23px;
-        }
-    }
-
-    .companypost-info__datatag {
-        color: #fbfbfb;
-        font-size: 2rem;
-        font-weight: 700;
-        padding: 20px;
-        width: 190px;
-        text-align: center;
-    }
-
-    .companypost-info__name {
-        color: #000;
-        font-size: 2rem;
-        font-weight: 700;
-        display: inline-block;
-    }
-
-    .companypost-info__url {
-        margin-left: 86px;
-        display: inline-block;
-    }
-
-    .companypost-info__urlcontent {
-        position: relative;
-        display: inline-block;
-        font-size: 1.4rem;
-        color: #1cbbb4;
-        font-weight: 700;
-        &::after {
-        content: "\f35d";
-        position: absolute;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        font-size: 10px;
-        right: -20px;
-        top: 5px;
-        }
-    }
-
-    .companypost-info__list {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 13px;
-        margin-left: -4px;
-    }
-
-    .companypost-info__item {
-        display: flex;
-        align-items: center;
-        width: 25%;
-        margin-top: 12px;
-        @include tab {
-            width: 50% !important;
-            align-items: flex-start;
-        }
-
-        &.companypost-info__item--w20 {
-        margin-left: 4.5%;
-        width: 25%;
-        @include tab {
-            margin-left: 0;
-        }
-        .companypost-info__itemtext {
-            letter-spacing: 0em;
-        }
-        }
-
-        &.companypost-info__item--w50 {
-        width: 45.1%;
-        }
-
-        &.companypost-info__item--w100 {
-        width: 100%;
-        margin-top: 10px;
-        }
-    }
-
-    .companypost-info__itemtag {
-        color: #000;
-        background-color: #fff;
-        font-size: 1.4rem;
-        border-radius: 11px;
-        padding: 2px;
-        width: 80px;
-        height: 24px;
-        text-align: center;
-        @include tab {
-            flex-shrink: 0;
-        }
-    }
-
-    .companypost-info__itemtext {
-        margin-left: 19px;
-        font-feature-settings: "palt" 1;
-        letter-spacing: -0.06em;
-    }
-
-    .companypost-info__tel {
-        letter-spacing: -0.04em;
-    }
-
-    .companypos-info__archivement {
-        display: flex;
-        margin-left: -4px;
-        margin-top: 20px;
-        margin-right: 23px;
-        @include tab {
-            margin-right: 0;
-        }
-        @include sp {
-            margin-right: 0;
-        }
-    }
-
-    .companypos-info__archivementtag {
-        color: #1cbbb4;
-        font-size: 1.5rem;
-        font-weight: 700;
-        background-color: #e3f8f8;
-        padding: 9px 15px;
-    }
-
-    .companypos-info__archivementtext {
-        background-color: #ffffff;
-        color: #000;
-        font-size: 1.3rem;
-        font-weight: 700;
-        padding: 9px 20px;
-        height: 40px;
-        flex: 1;
-        letter-spacing: 0.01em;
-    }
-
-    .conpanypost-info__strength {
-        margin-top: 98px;
-    }
-
-    .companypost-info__heading {
-        position: relative;
-        width: 100%;
-        max-width: 482px;
-        margin: 0 auto;
-        text-align: center;
-        @include sp {
-        width: 90%;
-        }
-
-        &::before {
-        position: absolute;
-        content: "";
-        width: 100%;
-        background: url(../../assets/img/about/topquote.png) no-repeat;
-        top: 1px;
-        left: -1px;
-        height: 100%;
-        background-size: contain;
-        }
-
-        &::after {
-        position: absolute;
-        content: "";
-        width: 100%;
-        background: url(../../assets/img/about/bottomquote.png) no-repeat;
-        bottom: -1px;
-        left: -3px;
-        height: 26%;
-        background-size: contain;
-        @include sp {
-            background-position: center;
-            height: 50%;
-            bottom: -8px;
-        }
-        }
-    }
-
-    .companypost-info__title {
-        font-size: 2.6rem;
-        font-weight: 700;
-        color: #020000;
-        padding: 32px 0;
-        letter-spacing: 0.01em;
-        font-feature-settings: "palt" 1;
-        @include sp {
-        font-size: 2.2rem;
-        padding: 20px 0;
-        }
-    }
-
-    .companypost-info__strengthcontent {
-        max-width: 780px;
-        margin: 33px auto 0;
-    }
-
-    .companypost-info__text {
-        & + .companypost-info__text {
             margin-top: 40px;
         }
-        h3 {
-            font-size: 2rem;
-            color: #00ada0;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            margin-bottom: 10px;
+	}
+
+	.companypost-info__servicecontent {
+		max-width: 780px;
+		margin: 43px auto 0;
+        @include sp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        p {
-            font-size: 1.6rem;
-            color: #000000;
-            line-height: 2;
-            font-feature-settings: "palt" 1;
-            letter-spacing: 0;
-        }
-    }
-    .companypost-info__service {
-        margin-top: 80px;
-    }
+	}
 
-    .companypost-info__servicecontent {
-        max-width: 780px;
-        margin: 43px auto 0;
-    }
+	.companypost-info__box {
+		display: flex;
 
-    .companypost-info__box {
-        display: flex;
+		& + .companypost-info__box {
+			margin-top: 30px;
+		}
 
-        & + .companypost-info__box {
-            margin-top: 30px;
-        }
+		.companypost-info__text {
+			margin-top: -7px;
+			h3 {
+				font-feature-settings: "palt" 1;
+				letter-spacing: 0;
+				margin-bottom: 13px;
+			}
+		}
 
-        .companypost-info__text {
-            margin-top: -7px;
-            h3 {
-                font-feature-settings: "palt" 1;
-                letter-spacing: 0;
-                margin-bottom: 13px;
+		.companypost-info__text--small {
+			font-size: 1.4rem;
+		}
+
+		img {
+			flex-shrink: 0;
+			margin-right: 20px;
+		}
+
+		@include sp {
+			flex-direction: column;
+            max-width: 360px;
+			img {
+				flex-shrink: 0;
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+			.companypost-info__text {
+				margin-top: 0;
+				h3 {
+					margin-bottom: 6px;
+				}
+			}
+		}
+	}
+
+	// Relative post
+	.companypost-relative {
+		margin-top: 135px;
+		padding-bottom: 58px;
+		background: url("../../assets/img/companypost/relative-bg.jpg");
+		position: relative;
+		@include sp {
+			margin-top: 67px;
+			padding-bottom: 29px;
+		}
+	}
+	.companypost-relative__container {
+		max-width: 1180px;
+		width: 96%;
+		margin: 0 auto;
+	}
+	.companypost-relative__title {
+		font-size: 3rem;
+		color: #f8b616;
+		font-weight: 700;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		&::after {
+			position: absolute;
+			content: "";
+			background: url(../../assets/img/companypost/shining1.png);
+			width: 40px;
+			height: 35px;
+			left: -40%;
+			top: -5%;
+            @include sp {
+                width: 20px;
+                height: 17px;
+                background-size: contain;
             }
+		}
+		&::before {
+			position: absolute;
+			content: "";
+			background: url(../../assets/img/companypost/shining2.png) no-repeat;
+			width: 40px;
+			height: 35px;
+			right: -40%;
+			bottom: -20%;
+            @include sp {
+                width: 20px;
+                height: 17px;
+                background-size: contain;
+            }
+		}
+        @include sp {
+            font-size: 2.2rem;
         }
+	}
 
-        .companypost-info__text--small {
-            font-size: 1.4rem;
+	.companypost-relative__subtitle {
+		font-size: 1.5rem;
+		color: #000000;
+		text-align: center;
+		padding-top: 45px;
+		letter-spacing: 0.05em;
+        @include sp {
+            padding-top: 30px;
         }
+	}
 
-        img {
-            flex-shrink: 0;
-            margin-right: 20px;
+	.companypost-relative__list {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 46px;
+		@include tab {
+			flex-wrap: wrap;
+		}
+		@include sp {
+			flex-direction: column;
+			align-items: center;
+			width: 90%;
+			margin: 23px auto 0;
+		}
+	}
+
+	.companypost-relative__item {
+		width: 25%;
+		margin: 10px;
+		@include tab {
+			width: calc(50% - 20px);
+			img {
+				width: 100%;
+			}
+		}
+		@include sp {
+            width: 100%;
+			max-width: 360px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.companypost-relative__itembody {
+		padding: 10px 30px 28px 10px;
+		background-color: #fff;
+		@include tab {
+			padding: 10px 10px 30px;
+		}
+		@include sp {
+			padding: 10px 10px 15px;
+		}
+	}
+
+	.companypost-relative__itemtitle {
+		font-size: 1.6rem;
+		color: #000;
+		font-feature-settings: "palt" 1;
+	}
+	.companypost-relative__itemsubtitle {
+		font-size: 1.4rem;
+		color: #000;
+		margin-top: 11px;
+        @include sp {
+            margin-top: 5px;
         }
-    }
+	}
 
-    // Relative post
-    .companypost-relative {
-        margin-top: 135px;
-        padding-bottom: 70px;
-        background: url('../../assets/img/companypost/relative-bg.jpg');
-        position: relative;
-    }
-    .companypost-relative__title {
-        font-size: 3rem;
-        color: #f8b616;
-        font-weight: 700;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        &::after {
-            position: absolute;
-            content: "";
-            background: url(../../assets/img/companypost/shining1.png);
-            width: 40px;
-            height: 35px;
-            left: -40%;
-            top: -5%;
+	// Other company
+	.companypost-other {
+		background-color: #fefeed;
+		padding-top: 62px;
+		padding-bottom: 85px;
+        @include sp {
+            padding-top: 31px;
+            padding-bottom: 43px;
         }
-        &::before {
-            position: absolute;
-            content: "";
-            background: url(../../assets/img/companypost/shining2.png) no-repeat;
-            width: 40px;
-            height: 35px;
-            right: -40%;
-            bottom: -20%;
-        } 
-    }
+	}
+	.companypost-other__container {
+		max-width: 1190px;
+		width: 96%;
+		margin: 0 auto;
+	}
+	.companypost-other__title {
+		font-size: 2.4rem;
+		color: #000000;
+		font-weight: 700;
+		text-align: center;
+        @include sp {
+            font-size: 2.2rem;
+        }
+	}
 
-    .companypost-relative__subtitle {
-        font-size: 1.5rem;
-        color: #000000;
-        text-align: center;
-        padding-top: 45px;
-        letter-spacing: 0.05em;
-    }
-
-    .companypost-relative__list {
-        display: flex;
-        justify-content: space-between;
-        margin: -10px;
-        margin-top: 46px;
-    }
-
-    .companypost-relative__item {
-        width: 25%;
-        margin: 10px;
-    }
-
-    .companypost-relative__itembody {
-        padding: 10px 30px 28px 10px;
-        background-color: #fff;
-    }
-
-    .companypost-relative__itemtitle {
-        font-size: 1.6rem;
-        color: #000;
-        font-feature-settings: "palt" 1;
-    }
-    .companypost-relative__itemsubtitle {
-        font-size: 1.4rem;
-        color: #000;
-        margin-top: 11px;
-    }
-
-    // Other company
-    .companypost-other {
-        background-color: #fefeed;
-        padding-top: 62px;
-        padding-bottom: 85px;
-    }
-    .companypost-other__title {
-        font-size: 2.4rem;
-        color: #000000;
-        font-weight: 700;
-        text-align: center;
-    }
-
-    .companypost-other__list {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5px;
-    }
+	.companypost-other__list {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 5px;
+        @include sp {
+            flex-direction: column;
+            align-items: center;
+        }
+	}
 }
